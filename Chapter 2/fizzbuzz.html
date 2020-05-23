@@ -1,0 +1,17 @@
+<!-- 
+    FizzBuzz: common interview question
+    
+    Requirements:
+    * output numbers from 1 to 100 with the following exceptions:
+        - for numbers divisible by 3, output 'Fizz'
+        - for numbers divisible by 5, output 'Buzz'
+        - for number divisible by 3 and 5, output 'FizzBuzz'
+-->
+<script>
+    for(let i = 0; i < 100; i++) {
+        if((i+1) % 3 == 0 && (i+1) % 5 == 0) console.log('FizzBuzz');
+        else if((i+1) % 3 == 0) console.log('Fizz');
+        else if((i+1) % 5 == 0) console.log('Buzz');
+        else console.log(i+1);
+    }
+</script>

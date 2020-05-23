@@ -1,0 +1,29 @@
+<!-- output 7 '#' to form a triangle -->
+<script>
+    // approach 1
+    let output = '';
+    for (let i = 0; i < 7; i++) {
+        output += '#';
+        console.log(output);
+    }
+
+    // approach 2
+    let output2 = '';
+    while (output2.length < 7) {
+        output2 += '#';
+        console.log(output2);
+    }
+
+    // approach 3
+    let finished = false;
+    let i = 0;
+    while(!finished) {
+        i++;
+        let output3 = '';
+        while(output3.length < i) {
+            output3 += '#';
+        }
+        if(output3.length > 7) break;
+        console.log(output3);
+    }
+</script>
