@@ -1,0 +1,25 @@
+<!-- 
+    Create and output a string that represents 
+    a grid as defined by `size`.  Each grid position
+    is either a space or a # character.  Characters should
+    form a chessboard.
+ -->
+<script>
+    let size = 8;
+    let output = '';
+    let row = 0;
+    let col = 0;
+    while(row < size) {
+        while(col < size) {
+            if(row % 2 == 0)
+                output += col % 2 == 0 ? ' ' : '#';
+            else
+                output += col % 2 == 0 ? '#' : ' ';
+            col++;
+        }
+        output += '\n';
+        col = 0;
+        row++;
+    }
+    console.log(output);
+</script>
